@@ -1,0 +1,60 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Web2ProjectMVC
+build_property.RootNamespace = Web2ProjectMVC
+build_property.ProjectDir = D:\C#\Web2ProjectMVC\Web2ProjectMVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C#\Web2ProjectMVC\Web2ProjectMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Ads/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Ads/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Ads/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Ads/OurAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXE91ckFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Shared/_site.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9zaXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Web2ProjectMVC/Web2ProjectMVC/Views/Users/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

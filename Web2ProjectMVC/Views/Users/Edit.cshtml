@@ -1,0 +1,52 @@
+﻿@model Web2ProjectMVC.ViewModels.Users.EditVM 
+@using Web2ProjectMVC.Entities 
+@using Web2ProjectMVC.ExtentionMethods
+@{
+    Layout = "/Views/Shared/_site.cshtml";
+    ViewData["Title"] = "Users";
+}
+
+<form action="/Users/Edit" method="post" class="formLogin">
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Role)
+    <h3>Edit</h3>
+    <div class="formData">
+        <div class="inputLabel">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName)
+        </div>
+        @Html.ValidationMessageFor(m => m.UserName)
+    </div>
+    <div class="formData">
+        <div class="inputLabel">
+            *@Html.LabelFor(m => m.Password)
+            @Html.TextBoxFor(m => m.Password)
+        </div>
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+    <div class="formData">
+        <div class="inputLabel">
+            *@Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email)
+        </div>
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <div class="formData">
+        <div class="inputLabel">
+            *@Html.LabelFor(m => m.FirstName)
+            @Html.TextBoxFor(m => m.FirstName)
+        </div>
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </div>
+    <div class="formData">
+        <div class="inputLabel">
+            *@Html.LabelFor(m => m.LastName)
+            @Html.TextBoxFor(m => m.LastName)
+        </div>
+        @Html.ValidationMessageFor(m => m.LastName)
+    </div>
+    <div class="submit">
+        <button type="submit">Edit</button>
+    </div>
+    
+</form>

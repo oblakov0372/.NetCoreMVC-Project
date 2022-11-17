@@ -1,0 +1,20 @@
+﻿@using Web2ProjectMVC.Entities 
+@using Web2ProjectMVC.ExtentionMethods
+@{
+    Layout = "/Views/Shared/_site.cshtml";
+    ViewData["Title"] = "Users";
+    User loggedUser = ViewContext.HttpContext.Session.GetObject<User>("loggedUser");
+}
+<div class="userInfo">
+    <ul>
+        <li>Username: @loggedUser.UserName</li>
+        <li>Password: @loggedUser.Password</li>
+        <li>First name: @loggedUser.FirstName</li>
+        <li>Last name: @loggedUser.LastName</li>
+        <li>Email: @loggedUser.Email</li>
+        <li>Role: @loggedUser.Role</li>
+    </ul>
+    <a  href="/Users/Edit?id=@loggedUser.Id">Change data</a>
+    <a href="/Users/Delete">Delete Account</a>
+</div>
+

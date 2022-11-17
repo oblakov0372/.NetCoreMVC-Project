@@ -1,0 +1,34 @@
+﻿@model Web2ProjectMVC.ViewModels.Users.IndexVM 
+@using Web2ProjectMVC.Entities 
+@{
+Layout = "/Views/Shared/_site.cshtml"; ViewData["Title"] = "Users"; 
+}
+<div class="users">
+  <ul>
+    <li>UserName</li>
+    <li>FirstName</li>
+    <li>LastName</li>
+    <li>Email</li>
+    <li>Role</li>
+  </ul>
+  @foreach (User item in Model.Items) {
+  <div class="flex" style="display:flex;align-items:center;">
+      <ul>
+        <li>@item.UserName</li>
+        <li>@item.FirstName</li>
+        <li>@item.LastName</li>
+        <li>@item.Email</li>
+        <li>@item.Role</li>
+      </ul>
+@if(item.Role == Roles.User){
+       <form action="/Users/ToOrganization?id=@item.Id" method = "post">
+            <button class="redButton" name="toOrganization" value="toOrganization" > Role to organization</button>
+       </form>
+}else if(item.Role == Roles.Organization){
+       <form action="/Users/toUser?id=@item.Id" method = "post">
+            <button class="greenButton" name="toUser" value="toUser" > Role to user</button>
+       </form>
+}
+  </div>
+  }
+</div>

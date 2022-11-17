@@ -1,0 +1,39 @@
+﻿@using Web2ProjectMVC.Entities
+@using Web2ProjectMVC.ExtentionMethods
+@{
+    User loggedUser = this.ViewContext.HttpContext.Session.GetObject<User>("loggedUser");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="/site.css" rel="stylesheet" type="text/css" />
+    <title>@ViewData["Title"]</title>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="navbar-nav left">
+        <li class="nav-item"><a href="/Home/Index">Home</a></li>
+        <li class="nav-item"><a href="/Ads/Index">Ads</a></li>
+        @if(loggedUser != null && loggedUser.Role == Roles.Admin){
+            <li class="nav-item"><a href="/Users/Index">Users</a></li>
+        }
+        @if(loggedUser != null && loggedUser.Role != Roles.User){
+            <li class="nav-item"><a href="/Ads/OurAds">Our Ads</a></li>
+        }
+      </ul>
+      <ul class="navbar-nav right" }>
+        @if(loggedUser == null){
+            <li class="nav-item"><a href="/Home/Login">Login</a></li>
+        }else{
+            <li class="nav-item"><a href="/Users/Profile">Profile</a></li>
+            <li class="nav-item"><a href="/Home/Logout">Logout</a></li>
+        }
+      </ul>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    
+  </body>
+</html>

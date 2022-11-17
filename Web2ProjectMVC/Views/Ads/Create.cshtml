@@ -1,0 +1,22 @@
+﻿@model Web2ProjectMVC.ViewModels.Ads.CreateVM
+@namespace Web2ProjectMVC.Entities
+@{
+    Layout = "/Views/Shared/_site.cshtml";
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="text-align:center">New Ad</h1>
+<form action="/Ads/Create" method="post" class="formCreateAd">
+    <div class="inputLabel">
+        @Html.LabelFor(ad => ad.Title)
+        @Html.TextBoxFor(ad => ad.Title)
+        <p class="error">@Html.ValidationMessageFor(ad => ad.Title)</p>
+    </div>
+    <div class="inputLabel">
+        @Html.LabelFor(ad => ad.Description)
+        @Html.TextBoxFor(ad => ad.Description)
+        <p class="error">@Html.ValidationMessageFor(ad => ad.Description)</p>
+    </div>
+    <button type="submit" class="submit">Create</button>
+
+</form>

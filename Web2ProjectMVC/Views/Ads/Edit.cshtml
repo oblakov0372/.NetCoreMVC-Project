@@ -1,0 +1,23 @@
+﻿@model Web2ProjectMVC.ViewModels.Ads.EditVM
+@namespace Web2ProjectMVC.Entities
+@{
+    Layout = "/Views/Shared/_site.cshtml";
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="text-align:center">New Ad</h1>
+<form action="/Ads/Edit" method="post" class="formCreateAd">
+    @Html.HiddenFor(ad => ad.Id)
+    <div class="inputLabel">
+        @Html.LabelFor(ad => ad.Title)
+        @Html.TextBoxFor(ad => ad.Title)
+        <p class="error">@Html.ValidationMessageFor(ad => ad.Title)</p>
+    </div>
+    <div class="inputLabel">
+        @Html.LabelFor(ad => ad.Description)
+        @Html.TextBoxFor(ad => ad.Description)
+        <p class="error">@Html.ValidationMessageFor(ad => ad.Description)</p>
+    </div>
+    <button type="submit" class="submit">Edit</button>
+
+</form>

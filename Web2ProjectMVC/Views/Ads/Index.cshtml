@@ -1,0 +1,31 @@
+﻿@model Web2ProjectMVC.ViewModels.Ads.IndexVM
+@using Web2ProjectMVC.ExtentionMethods
+@using Web2ProjectMVC.Entities
+@using Web2ProjectMVC.Repository
+@{
+    Layout = "/Views/Shared/_site.cshtml";
+    ViewData["Title"] = "Ads";
+    
+    
+}
+@if(Model.Items.Count == 0){
+    <h1>
+        Don't have ads now
+    </h1>
+}else{
+    foreach(Ad item in Model.Items ){
+        <div class="ad">
+            <h1>@item.Title</h1>
+            <p>@item.Description</p>
+            @if (Model.LoggedUser != null && Model.LoggedUser.Role == Roles.User)
+            {
+                @if(Model.UsersToAds.Where(i => i.UserId == Model.LoggedUser.Id && i.AdId == item.Id).FirstOrDefault() == null){
+                    <a class="greenButton" href="/Users/EngageUser?id=@item.Id">Engage</a>
+                }else{
+                    <h4>You engage already</h4>
+                    <h4>Your status is @Model.UsersToAds.Where(i => i.UserId == Model.LoggedUser.Id && i.AdId == item.Id).FirstOrDefault().Status</h4>
+                }
+            }
+        </div>
+    }
+}

@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "h7hTctoOSz5PzWZ/LPtUdjS7NusaoLP683CQUlm+Cng=",
+  "Source": "Web2ProjectMVC",
+  "BasePath": "_content/Web2ProjectMVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Web2ProjectMVC\\wwwroot",
+      "Source": "Web2ProjectMVC",
+      "ContentRoot": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\",
+      "BasePath": "_content/Web2ProjectMVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\img\\add.png",
+      "SourceId": "Web2ProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\",
+      "BasePath": "_content/Web2ProjectMVC",
+      "RelativePath": "img/add.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\add.png"
+    },
+    {
+      "Identity": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\img\\exchange.png",
+      "SourceId": "Web2ProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\",
+      "BasePath": "_content/Web2ProjectMVC",
+      "RelativePath": "img/exchange.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\exchange.png"
+    },
+    {
+      "Identity": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\img\\trash-solid.svg",
+      "SourceId": "Web2ProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\",
+      "BasePath": "_content/Web2ProjectMVC",
+      "RelativePath": "img/trash-solid.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\trash-solid.svg"
+    },
+    {
+      "Identity": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\site.css",
+      "SourceId": "Web2ProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Web2ProjectMVC\\Web2ProjectMVC\\wwwroot\\",
+      "BasePath": "_content/Web2ProjectMVC",
+      "RelativePath": "site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.css"
+    }
+  ]
+}

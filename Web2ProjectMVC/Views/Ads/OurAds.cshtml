@@ -1,0 +1,44 @@
+﻿@model Web2ProjectMVC.ViewModels.Ads.IndexVM
+@namespace Web2ProjectMVC.Entities
+@{
+    Layout = "/Views/Shared/_site.cshtml";
+    ViewData["Title"] = "Our Ads";
+}
+<a class="imgAdd" href="/Ads/Create">
+    <img src="/img/add.png"  width="50"  alt="add_ad"/>
+</a>
+@if(Model.Items.Count == 0){
+    <h1>
+        You don't have ads
+    </h1>
+}else{
+    foreach(Ad item in Model.Items ){
+        <div class="ad">
+            <a class="imgChange" href="/Ads/Edit?id=@item.Id"><img width="40" alt="change" src="/img/exchange.png"/></a>
+            <a class="imgDelete" href="/Ads/Delete?id=@item.Id"><img width="40" alt="delete" src="/img/trash-solid.svg"/></a>
+            <h1>@item.Title</h1>
+            <p>@item.Description</p>
+            @foreach(UserToAd userToAd in Model.UsersToAds.Where(i => i.AdId == item.Id )){
+                <div class="userStatusBlock">
+                    <div class="left">
+                        <h2>User id: @userToAd.UserId</h2>
+                        <h2>User status : @userToAd.Status</h2>
+                    </div>
+                    <div class="right">
+                       @if(userToAd.Status == Status.NotWieved){
+                            <a class="greenButton" href="/Users/ConfirmUser?idUser=@userToAd.UserId&idAd=@userToAd.AdId">Accept</a>
+                            <a class="redButton" href="/Users/RejectUser?idUser=@userToAd.UserId&idAd=@userToAd.AdId">Reject</a>
+                       }else if(userToAd.Status == Status.Accepted){
+                            <a class="redButton" href="/Users/RejectUser?idUser=@userToAd.UserId&idAd=@userToAd.AdId">Reject</a>
+                       }
+                       else if (userToAd.Status == Status.Rejected)
+                       {
+                            <a class="greenButton" href="/Users/ConfirmUser?idUser=@userToAd.UserId&idAd=@userToAd.AdId">Accept</a>
+                       }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+}
+

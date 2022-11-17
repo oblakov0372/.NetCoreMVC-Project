@@ -1,0 +1,29 @@
+﻿@model Web2ProjectMVC.ViewModels.Home.LoginVM
+@{
+    ViewData["Title"] = "Login";
+    Layout = "/Views/Shared/_site.cshtml";
+}
+<form action="/Home/Login" method="post" class="formLogin">
+    <h3>Login</h3>
+    <div class="formData">
+        <div class="inputLabel">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName)
+        </div>
+        <p class="error">@Html.ValidationMessageFor(m => m.UserName)</p>
+    </div>
+    <div class="formData">
+        <div class="inputLabel">
+            @Html.LabelFor(m => m.Password)
+            @Html.TextBoxFor(m => m.Password)
+        </div>
+        <p class="error">@Html.ValidationMessageFor(m => m.Password)</p>
+    </div>
+    <div class="error">@Html.ValidationMessage("authError")</div>
+    <div class="submit">
+        <button type="submit">Login</button>
+    </div>
+    <div class="register">
+        <a href="/Home/Register">Register</a>
+    </div>
+</form>
